@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function add(a, b) {
+            return eval(a + b);
+        }
+        function sub(a, b) {
+            return eval(a - b);
+        }
+        function mul(a, b) {
+            return eval(a * b);
+        }
+        function div(a, b) {
+            return eval(a / b);
+        }
+
+        let op = prompt("Enter operation :")
+        let num1 = Number(prompt("Enter first Number :"))
+        let num2 = Number(prompt("Enter the second Number : "))
+
+        if (op == '+') {
+            ans = add(num1, num2)
+            console.log("Your Answer is ", ans);
+            prompt("Your Answer is ", ans);
+
+        } else if (op == '-') {
+            ans = sub(num1, num2)
+            console.log("Your Answer is ", ans);
+            prompt("Your Answer is ", ans);
+
+        } else if (op == '*') {
+            ans = mul(num1, num2)
+            console.log("Your Answer is ", ans);
+            prompt("Your Answer is ", ans);
+
+        } else if (op == '/') {
+            ans = div(num1, num2)
+            console.log("Your Answer is ", ans);
+            prompt("Your Answer is ", ans);
+
+        } else {
+            console.log("Invalid input!");
+        }
+    </script>
+</body>
+
+</html>

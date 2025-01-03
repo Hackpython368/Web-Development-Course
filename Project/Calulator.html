@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faulty Calculator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Fuzzy Bubbles", serif;
+            font-weight: 900;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-layout {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculator-box {
+            padding: 20px;
+            display: inline-block;
+            background-color: aqua;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .calculator-box input {
+            text-align: right;
+            margin: 10px;
+            max-width: 260px;
+            border-radius: 20px;
+            font-size: 60px;
+        }
+
+        .calculator-box button {
+            background-color: brown;
+            width: 50px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+
+        .btn-row .zero-btn {
+            width: 124px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup-layout">
+        <div class="calculator-box">
+            <input id="screen" type="text" />
+            <div class="btn-row">
+                <button onclick="btnclick(7)">7</button>
+                <button onclick="btnclick(8)">8</button>
+                <button onclick="btnclick(9)">9</button>
+                <button onclick="btnclick('+')">+</button>
+            </div>
+            <div class="btn-row">
+                <button onclick="btnclick(4)">4</button>
+                <button onclick="btnclick(5)">5</button>
+                <button onclick="btnclick(6)">6</button>
+                <button onclick="btnclick('-')">-</button>
+            </div>
+            <div class="btn-row">
+                <button onclick="btnclick(1)">1</button>
+                <button onclick="btnclick(2)">2</button>
+                <button onclick="btnclick(3)">3</button>
+                <button onclick="btnclick('/')">/</button>
+            </div>
+            <div class="btn-row">
+                <button class="zero-btn" onclick="btnclick(0)">0</button>
+                <button onclick="btnclick('=')">=</button>
+                <button onclick="btnclick('*')">*</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let userInput = "";
+
+
+        const cal = (a) =>{
+            return eval(a)
+        }
+        console.log("En")
+        function btnclick(number){
+            if(number=="="){
+                console.log("calaculating")
+                userInput = cal(userInput);
+                document.getElementById('screen').value = userInput
+
+            }else{
+                userInput += number
+                document.getElementById('screen').value = userInput
+                console.log(number)
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

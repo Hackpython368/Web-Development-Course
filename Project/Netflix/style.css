@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Signika+Negative:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    scrollbar-width: none;
+}
+
+.navbar{
+    display:flex;
+    position: absolute;
+    top: 10px;
+}
+
+.navbar img{
+    margin: 0px 200px;
+    max-width: 200px;
+}
+
+.navbar .nav-btn{
+    position: absolute;
+    left: 90vw;
+    align-content: center;
+    display: block;
+}
+
+.liminate{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 1000px;
+    background-color: hsla(0, 0%, 8%, 0.856);
+    text-align: center;
+    align-content: center;
+}
+
+.background-image img{
+    height: 1000px;
+    width: 100vw;
+}
+
+.drop-down{
+    padding: 10px;
+    font-weight: 900;
+    width: 100px;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.877);
+    border-radius: 4px;
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+.drop-down:hover{
+    cursor:pointer;
+}
+
+.dropdown-content{
+    display: none;
+    background-color: green;
+}
+
+.signin-btn{
+    padding: 10px;
+    font-weight: 900;
+    width: 100px;
+    color: white;
+    background-color:red;
+    border-radius: 4px;
+}
+
+.imagetext{
+    position: absolute; 
+    width: 100vw;
+    top: 500px;
+    text-align: center;
+}
+
+.image-text{
+    color:white;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.price-tag{
+    padding-top: 0px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.text{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.enter-email{
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.884);
+    padding: 22px;
+    width: 500px;
+    border: 0.5px solid rgb(49, 48, 48);
+    border-radius: 7px;
+    font-size: 1.5rem;
+}
+
+.get-started{
+    font-size: 1.5rem;
+    padding: 20px;
+    padding-right: 45px;
+    border-radius: 7px;
+    background-color: red;
+    color:white;
+}
+
+.content{
+    background-color: #000000;
+    margin: -3px;
+}
+
+.content h1{
+    padding:30px 200px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.content .btn{
+    padding-left: 190px;
+}
+
+.content .btn button{
+    margin: 20px;
+    color: white;
+    background-color: #0F0F0F;
+    border: 0.5px solid rgb(105, 100, 100);
+    padding: 15px;
+    border-radius: 9px;
+    padding-right: 40px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+}
+
+.movies-cart{
+    display:flex;
+    text-align: center;
+}
+
+.movies-cart .card img{
+    border-radius: 9px;
+    width: 250px;
+}
+
+.movies-cart .first-card{
+    margin-left: 131px;
+}
+.movies-cart .card{
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+.color{
+    color: white;
+}
+
+
+.message {
+    display: flex;
+}
+
+.message h1{
+    display: block;
+}
+
+.msg-card{
+    color: white;
+    width: 350px;
+    height: 500px;
+    overflow-x:scroll;
+    margin: 15px;
+    padding: 30px;
+    background-color: #1D162B;
+    border-radius: 12px;
+}
+.first-card{
+    margin-left: 200px;
+}

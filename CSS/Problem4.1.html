@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            background-color: black;
+            color: white;
+            height: 10vh;
+            text-align: center;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+        }
+        nav li{
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .first-div{
+            display: inline-block;
+            background-color: red;
+            width: 49vw;
+            height: 80vh;
+            padding: 5px;
+        }
+        .second-div{
+            display: inline-block;
+            background-color: green;
+            width: 48vw;
+            height: 80vh;
+            padding: 5px;
+        }
+        .content{
+            background-color: blueviolet;
+        }
+        footer{
+            text-transform: uppercase;
+            background-color: rgb(66, 49, 49);
+            text-align: center;
+            align-content: center;
+            height: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="first-div">
+            This is a first div.
+        </div>
+        <div class="second-div">
+            This is a second div. 
+        </div>
+    </div>
+    <footer>
+        This is footer.
+    </footer>
+</body>
+</html>

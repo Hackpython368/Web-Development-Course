@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#external{
+    background-color: green;
+    color: azure;
+}
