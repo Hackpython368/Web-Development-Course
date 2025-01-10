@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 6.6</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">This is box</div>
+        <div class="box">This is box</div>
+        <div class="box">This is box</div>
+        <div class="box">This is box</div>
+        <div class="box">This is box</div>
+    </div>
+
+
+    <script>
+        function generatecolor() {
+            const colors = [
+            "#E6E6FA", // Soft Lavender
+            "#0077B6", // Ocean Blue
+            "#FF4500", // Sunset Orange
+            "#98FF98", // Mint Green
+            "#FFD700", // Golden Yellow
+            "#FFB6C1", // Blush Pink
+            "#708090", // Slate Gray
+            "#6A0DAD", // Deep Purple
+            "#008080"  // Teal
+        ]
+            let color = Math.floor(Math.random()*10);
+
+            return colors[color];
+        }
+
+        lstelement = document.getElementsByClassName('box')
+
+
+        for (const element of lstelement) {
+            element.style.backgroundColor = generatecolor();
+
+        }
+    </script>
+</body>
+
+</html>

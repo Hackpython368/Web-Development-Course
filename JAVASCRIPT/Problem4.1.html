@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 4.1</title>
+</head>
+
+<body>
+    <script>
+        const record = Math.random();
+        let str = '';
+
+        if (record > 0.33) {
+            str += 'Crazy '
+        } else if (record > 0.66) {
+            str += 'Amazing '
+        } else {
+            str += 'Fire '
+        }
+
+        let userinput = prompt("Enter your company name :");
+
+        str += userinput;
+
+        if (record > 0.33) {
+            str += ' Hub'
+        } else if (record > 0.66) {
+            str += ' Bros'
+        } else {
+            str += ' Limited'
+        }
+
+
+        alert(`The name of the company is as follows : ${str}`)
+    </script>
+</body>
+
+</html>
